@@ -49,17 +49,12 @@
 
 
 
-    <div class="d-flex space-around mt-2">
+    <div id="main-controls" class="d-flex space-around mt-2">
       <button class= "btn-dark" onclick="changePlayer()">Change Player</button>
       <button id="start-button" onclick="startGame()">START GAME</button>
     </div>
-
-    <div>
-    <button id="inflate-button" onclick="inflate()" disabled="true">
-      Inflate
-      <span id="click-count"></span>
-    </button>
-    </div>
+<!--TODO replace hidden class-->
+    <div id="game-controls" class="">
     
     <div>
       <span>Balloons Popped:</span>
@@ -71,7 +66,18 @@
     <span id="countdown">0</span>
   </div>
   
-  <div id="balloon" class="balloon"></div>
+  <div class="game-container d-flex">
+    <div class="pump" onclick="inflate()">
+      <div class="handle"></div>
+      <div class="pump-box">
+        <span id="click-count"></span>
+      </div>
+    </div>
+    <div id="balloon" class="balloon"></div>
+  </div>
+  
+
+</div>
 </section>
 </main>
 

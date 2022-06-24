@@ -1,13 +1,9 @@
-let startButton = document.getElementById("start-button")
-let inflateButton = document.getElementById("inflate-button")
-
-
-//#region GAME LOGIC AND DATA
+//#region GAME LOGIC AND DATA 
 
 //DATA
 let clickCount = 0
-let height = 120
-let width = 20 //I liked a more deflated balloon
+let height = 140
+let width = 100 //I liked a more deflated balloon
 let inflationRate = 20
 let maxSize = 300
 let highestPopCount = 0
@@ -18,9 +14,9 @@ let timeRemaining = 0
 let currentPlayer = {}
 
 function startGame(){
-  startButton.setAttribute("disabled", "true")
-  inflateButton.removeAttribute("disabled")
-startClock()
+  document.getElementById("game-controls").classList.remove("hidden")
+  document.getElementById("main-controls").classList.add("hidden")
+  startClock()
   setTimeout(stopGame, gameLength)
 }
 
@@ -74,8 +70,8 @@ function draw(){
 function stopGame() {
   console.log("Game Over!")
 
-  inflateButton.setAttribute("disabled", "true")
-  startButton.removeAttribute("disabled")
+  document.getElementById("main-controls").classList.remove("hidden")
+  document.getElementById("game-controls").classList.add("hidden")
 
   clickCount = 0
   height = 120
