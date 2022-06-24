@@ -47,14 +47,12 @@
       </div>
     </div>
 
-
-
     <div id="main-controls" class="d-flex space-around mt-2">
       <button class= "btn-dark" onclick="changePlayer()">Change Player</button>
       <button id="start-button" onclick="startGame()">START GAME</button>
     </div>
-<!--TODO replace hidden class-->
-    <div id="game-controls" class="">
+
+    <div id="game-controls" class="hidden">
     
     <div>
       <span>Balloons Popped:</span>
@@ -74,12 +72,18 @@
       </div>
     </div>
     <div id="balloon" class="balloon"></div>
+    <audio id="pop-sound" src="burst.mp3"></audio>
   </div>
   
 
 </div>
 </section>
 </main>
+
+<div id="scoreboard" class="container card mt-2">
+  <h3 class="text-center">Scoreboard</h3>
+  <div id="players"></div>
+</div>
 
 <script src="main.js"></script>
 </body>
