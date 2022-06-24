@@ -123,6 +123,22 @@ button:hover{
   background: linear-gradient(-45deg, #430101 0%, #fa1e01 60%, #ff0000 100%);
 }
 
+.balloon.green{
+  filter: hue-rotate(130deg);
+}
+
+.balloon.blue{
+  filter: hue-rotate(225deg);
+}
+
+.balloon.pink{
+  filter: hue-rotate(325deg);
+}
+
+.balloon.purple{
+  filter: hue-rotate(354deg);
+}
+
 @keyframes balloon-float{
   0%,100% {
     transform: translateY(-25px) rotate(5deg);
