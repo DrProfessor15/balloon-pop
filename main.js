@@ -1,9 +1,9 @@
 //#region GAME LOGIC AND DATA 
 
-//DATA
+// DATA
 let clickCount = 0
 let height = 140
-let width = 100 //I liked a more deflated balloon
+let width = 100
 let inflationRate = 20
 let maxSize = 300
 let highestPopCount = 0
